@@ -1,0 +1,197 @@
+
+.section5 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff; /* Optional background color */
+    overflow: hidden;
+  }
+
+  /* Centered Image */
+  /* Wrapper for the centered image and effects */
+.image-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  z-index: 10;
+}
+
+/* Center Image with Modern Design */
+.center-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #ff4081; /* Vibrant border color */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  animation: popIn 0.8s ease-out forwards;
+}
+
+/* Animated Pulse Ring Effect */
+.pulse-ring {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border: 4px solid rgba(255, 64, 129, 0.5);
+  border-radius: 50%;
+  animation: pulse 2s infinite ease-in-out;
+  z-index: 1;
+}
+
+/* Animations */
+@keyframes popIn {
+  0% {
+      transform: scale(0.5);
+      opacity: 0;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+      opacity: 0.7;
+  }
+  50% {
+      transform: scale(1.2);
+      opacity: 0.4;
+  }
+  100% {
+      transform: scale(1.4);
+      opacity: 0;
+  }
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .image-wrapper {
+      width: 200px;
+      height: 200px;
+  }
+
+  .center-image {
+      width: 150px;
+      height: 150px;
+  }
+
+  .pulse-ring {
+      width: 200px;
+      height: 200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .image-wrapper {
+      width: 150px;
+      height: 150px;
+  }
+
+  .center-image {
+      width: 120px;
+      height: 120px;
+  }
+
+  .pulse-ring {
+      width: 150px;
+      height: 150px;
+  }
+}
+
+  /* Floating Image Background */
+  .image-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .floating-image {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    animation: float 10s infinite ease-in-out;
+  }
+
+  /* Position each image dynamically */
+  .floating-image:nth-child(1) { top: 5%; left: 10%; animation-duration: 12s; }
+  .floating-image:nth-child(2) { top: 25%; left: 25%; animation-duration: 14s; }
+  .floating-image:nth-child(3) { top: 25%; left: 60%; animation-duration: 16s; }
+  .floating-image:nth-child(4) { top: 45%; left: 5%; animation-duration: 18s; }
+  .floating-image:nth-child(5) { top: 60%; left: 70%; animation-duration: 20s; }
+  .floating-image:nth-child(6) { top: 65%; left: 30%; animation-duration: 22s; }
+  .floating-image:nth-child(7) { top: 80%; left: 70%; animation-duration: 24s; }
+  .floating-image:nth-child(8) { top: 10%; left: 80%; animation-duration: 26s; }
+  .floating-image:nth-child(9) { top: 40%; left: 70%; animation-duration: 28s; }
+  .floating-image:nth-child(10) { top: 80%; left: 5%; animation-duration: 30s; }
+
+  /* Floating Animation */
+  @keyframes float {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(-10px, -15px); }
+  }
+
+  .s5title {
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #e4e4e4; /* Light background for better visibility */
+}
+
+/* H2 Styling */
+.s5title h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ff4081; /* A nice highlight color */
+}
+
+/* H3 Styling */
+.s5title h3 {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    color: #555; /* Slightly darker for contrast */
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .s5title h2 {
+        font-size: 1.8rem;
+    }
+
+    .s5title h3 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .s5title h2 {
+        font-size: 1.5rem;
+    }
+
+    .s5title h3 {
+        font-size: 0.9rem;
+    }
+
+    .s5title {
+        padding: 15px;
+    }
+}

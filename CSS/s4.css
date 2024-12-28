@@ -1,0 +1,38 @@
+.game-container {
+    display: inline-block;
+    position: relative;
+    border: 2px solid #333;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.puzzle-piece {
+    width: 100px;
+    height: 100px;
+    float: left;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.clear {
+    clear: both;
+}
+.puzzle-board {
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.start-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+.start-btn:hover {
+    background-color: #45a049;
+}

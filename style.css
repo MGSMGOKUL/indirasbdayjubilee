@@ -1,0 +1,446 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+ /* Navbar Styles */
+ .navbar1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-sizing: border-box;
+    transition: top 0.3s;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.title {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+/* Active link style - Blue color */
+.nav-links a.active {
+    color: blue;
+    font-weight: bold;
+}
+
+/* Hover effect */
+.nav-links a:hover {
+    color: #f157ff;
+    font-weight: bold;
+}
+
+/* Toggle Button */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #17a2ff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        background-color: #333;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 200px;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+}
+
+section {
+    height: 100vh;
+    padding: 20px;
+    
+}
+
+section:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+section {
+    height: auto;
+    padding: 20px;
+}
+
+section:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+
+/* Section Styles */
+/* Section 1: Birthday Theme */
+/* Animated Text Style */
+/* Animated Text Style */
+/* Typing Animation Styles */
+
+
+
+
+.birthday-intro {
+    background-image: url(bgdark.jpg);
+    color: #fff;
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.birthday-intro .main-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.birthday-intro .subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    color: #fff9f9;
+}
+
+.birthday-intro .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.birthday-intro .feature-item {
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+    color: #fff;
+}
+
+.birthday-intro .feature-item:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.birthday-intro .feature-item i {
+    font-size: 2.5rem;
+    color: #ff44f6a8;
+    margin-bottom: 1rem;
+}
+
+.birthday-intro .feature-item h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.birthday-intro .btn {
+    background-color: #ff6f61;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.birthday-intro .btn:hover {
+    background-color: #ff3b2e;
+}
+
+/* Floating Animation */
+.animate-floating1 {
+    animation: float 4s infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.section {
+    padding: 100px 20px;
+    min-height: auto;
+    text-align: center;
+}
+
+#section1 {
+   background-color: #000000;
+    
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+}
+
+
+#section2 {
+    background-color: #000000;
+}
+
+#section3 {
+    background-color: #ffffff;
+    height: auto;
+}
+
+#section4 {
+    background-color: #c0c0c0;
+}
+
+#section5 {
+    background-color: #ffffff;
+}
+
+#section6 {
+    background-color: #808080;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+
+
+
+/* Confetti Canvas */
+.confetti-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Ensure it doesn't block other interactions */
+    z-index: 1000;
+    overflow: hidden;
+}
+/* Confetti Styles */
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    opacity: 0.9;
+    border-radius: 50%;
+    animation: fall linear forwards;
+}
+
+/* Falling Animation */
+@keyframes fall {
+    0% {
+        transform: translateY(-10vh) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0.5;
+    }
+}
+
+
+
+
+/* Confetti Canvas */
+.confetti-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+/* Dog Walking Animation */
+.interactive-dog {
+    position: relative;
+    width: 100px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+/* Image and Dog Animation */
+.dog-img {
+    width: 100px; /* Adjust to the size you prefer */
+    height: auto;
+    position: absolute;
+    bottom: 20px;
+    left: -120px;  /* Start outside of the viewport */
+    animation: dogWalk 5s linear infinite;
+}
+
+/* Dog Walk Animation */
+@keyframes dogWalk {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(300px);  /* Adjust to how far you want the dog to move */
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Happy Birthday Text */
+.birthday-text {
+    border: 1px solid;
+    background-color: #ffffff00;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    color: #000000;
+    font-weight: bold;
+    opacity: 0;
+    z-index: 1001;
+    text-shadow: 2px 2px 10px rgba(0, 162, 211, 0.534);
+    animation: fadeText 2s ease-in-out forwards;
+    display: none;
+}
+
+/* Dog Walking Animation Keyframes */
+@keyframes dogWalk {
+    0% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
+/* Happy Birthday Text Fade-in */
+@keyframes fadeText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Confetti Styles */
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    opacity: 0.9;
+    border-radius: 50%;
+    animation: fall linear forwards;
+}
+
+/* Falling Animation */
+@keyframes fall {
+    0% {
+        transform: translateY(-10vh) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0.5;
+    }
+}
+
+
+
+
+
+
+.chat-input {
+  border-radius: 10px;
+    width: 100%;
+    background-color: #222; /* Dark background */
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.chat-input input {
+    flex: 1;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+}
+
+.chat-input input:focus {
+    outline: none;
+    background-color: #444;
+}
+
+.chat-input .icon-btn {
+    color: #ccc;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.chat-input .icon-btn:hover {
+    color: #fff;
+}
